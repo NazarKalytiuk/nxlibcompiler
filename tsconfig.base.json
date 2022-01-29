@@ -11,10 +11,15 @@
     "target": "es2015",
     "module": "esnext",
     "lib": ["es2017", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
+    "skipLibCheck": false,
+    "skipDefaultLibCheck": false,
+    "strict": false,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@stricttest/mylib": ["libs/mylib/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

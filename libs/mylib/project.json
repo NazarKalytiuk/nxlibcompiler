@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/mylib",
+  "sourceRoot": "libs/mylib/src",
+  "prefix": "stricttest",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/mylib"],
+      "options": {
+        "jestConfig": "libs/mylib/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/mylib/src/**/*.ts",
+          "libs/mylib/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

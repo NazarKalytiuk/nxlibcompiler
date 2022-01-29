@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "skipLibCheck": false,
+    "skipDefaultLibCheck": false
+  }
+}

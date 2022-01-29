@@ -1,0 +1,28 @@
+{
+  "root": "apps/strict-e2e",
+  "sourceRoot": "apps/strict-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/strict-e2e/cypress.json",
+        "devServerTarget": "strict:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "strict:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/strict-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["strict"]
+}

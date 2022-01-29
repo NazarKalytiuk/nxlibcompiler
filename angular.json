@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "strict": "apps/strict",
+    "strict-e2e": "apps/strict-e2e"
+  }
+}
